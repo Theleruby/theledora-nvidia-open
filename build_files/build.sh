@@ -18,7 +18,7 @@ dnf5 config-manager setopt rpmfusion-nonfree-updates.enabled=1
 dnf5 install -y htop
 
 # easyeffects
-dnf5 install -y easyeffects
+dnf5 install -y easyeffects calf lv2 lv2-calf-plugins
 
 # python
 dnf5 install -y python3-devel
@@ -32,7 +32,7 @@ dnf5 install -y google-chrome-stable
 
 # docker
 dnf5 config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
-dnf5 install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+dnf5 install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 
 # .net
 dnf5 install -y dotnet-sdk-8.0 dotnet-runtime-8.0
@@ -51,7 +51,7 @@ dnf5 install -y mariadb-devel mariadb-connector-c-doc
 dnf5 install -y ImageMagick-devel
 
 # fluidsynth
-dnf5 install -y fluidsynth
+dnf5 install -y fluidsynth fluid-soundfont-common fluid-soundfont-gm
 
 # vlc
 dnf5 install -y vlc vlc-plugin-ffmpeg vlc-plugin-fluidsynth vlc-plugin-kde vlc-plugin-visualization
@@ -63,7 +63,7 @@ dnf5 install -y yt-dlp
 dnf5 install -y zerotier-one
 
 # libreoffice
-dnf5 install -y libreoffice
+dnf5 install -y libreoffice libreoffice-kf6 libreoffice-help-en
 
 # discord
 dnf5 install -y discord
