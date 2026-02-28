@@ -35,6 +35,9 @@ dnf5 config-manager addrepo --from-repofile https://download.docker.com/linux/fe
 dnf5 install -y dotnet-sdk-8.0 dotnet-runtime-8.0
 dnf5 install -y dotnet-sdk-10.0 dotnet-runtime-10.0
 
+# node.js
+dnf5 install -y nodejs
+
 # mercurial
 dnf5 install -y mercurial tortoisehg python3-dulwich
 
