@@ -79,7 +79,7 @@ dnf5 install -y krusader
 
 # fonts
 dnf5 install -y cabextract fontconfig
-dnf5 install -y gnu-free-fonts-common gnu-free-sans-fonts google-croscore-fonts larabie-fonts lpf-cleartype-fonts lpf-mscore-fonts lpf-mscore-tahoma-fonts
+dnf5 install -y gnu-free-fonts-common gnu-free-sans-fonts lpf-cleartype-fonts lpf-mscore-fonts lpf-mscore-tahoma-fonts
 
 # move stuff in /var/opt to /usr/lib/opt and add symlink to tmpfiles conf
 # taken from https://github.com/astrovm/amyos/blob/main/build_files/fix-opt.sh, thanks <3
