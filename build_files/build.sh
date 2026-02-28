@@ -42,7 +42,7 @@ dnf5 install -y dotnet-sdk-8.0 dotnet-runtime-8.0
 dnf5 install -y dotnet-sdk-10.0 dotnet-runtime-10.0
 
 # node.js
-dnf5 install -y nodejs24 nodejs24-npm
+dnf5 install -y nodejs nodejs-npm
 
 # mercurial
 dnf5 install -y mercurial tortoisehg python3-dulwich
