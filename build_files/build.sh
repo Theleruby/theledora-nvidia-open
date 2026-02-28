@@ -17,8 +17,11 @@ dnf5 config-manager setopt rpmfusion-nonfree-updates.enabled=1
 # htop
 dnf5 install -y htop
 
+# dependencies for some stuff
+dnf5 install -y kdsingleapplication-qt6
+
 # easyeffects
-dnf5 install -y easyeffects calf lv2 lv2-calf-plugins
+dnf5 install -y easyeffects calf lv2 lv2-calf-plugins lv2-mdala-plugins lv2-zam-plugins lsp-plugins-lv2
 
 # python
 dnf5 install -y python3-devel
@@ -39,7 +42,7 @@ dnf5 install -y dotnet-sdk-8.0 dotnet-runtime-8.0
 dnf5 install -y dotnet-sdk-10.0 dotnet-runtime-10.0
 
 # node.js
-dnf5 install -y nodejs
+dnf5 install -y nodejs24 nodejs24-npm
 
 # mercurial
 dnf5 install -y mercurial tortoisehg python3-dulwich
