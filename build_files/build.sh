@@ -2,23 +2,62 @@
 
 set -ouex pipefail
 
-### Install packages
+# make sure all the fedora repo definitions are installed as bazzite doesn't include these
+dnf5 install -y fedora-workstation-repositories
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
+# make sure rpmfusion is enabled
+dnf5 config-manager setopt rpmfusion-free.enabled=1
+dnf5 config-manager setopt rpmfusion-free-updates.enabled=1
+dnf5 config-manager setopt rpmfusion-nonfree.enabled=1
+dnf5 config-manager setopt rpmfusion-nonfree-updates.enabled=1
 
-# this installs a package from fedora repos
-dnf5 install -y tmux 
+# htop
+dnf5 install -y htop
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+# easyeffects
+dnf5 install -y easyeffects
 
-#### Example for enabling a System Unit File
+# python
+dnf5 install -y python3-devel
 
-systemctl enable podman.socket
+# java
+dnf5 install -y java-21-openjdk-devel.x86_64 java-25-openjdk-devel.x86_64
+
+# chrome
+dnf5 config-manager setopt google-chrome.enabled=1
+dnf5 install -y google-chrome-stable
+
+# docker
+dnf5 config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
+dnf5 install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# .net
+dnf5 install -y dotnet-sdk-8.0 dotnet-runtime-8.0
+dnf5 install -y dotnet-sdk-10.0 dotnet-runtime-10.0
+
+# mercurial
+dnf5 install -y mercurial tortoisehg python3-dulwich
+
+# mysql
+dnf5 install -y mariadb-devel
+
+# imagemagick
+dnf5 install -y ImageMagick-devel
+
+# fluidsynth
+dnf5 install -y fluidsynth
+
+# vlc
+dnf5 install -y vlc vlc-plugin-fluidsynth vlc-plugin-kde
+
+# yt-dlp
+dnf5 install -y yt-dlp
+
+# zerotier
+dnf5 install -y zerotier-one
+
+# libreoffice
+dnf5 install -y libreoffice
+
+# discord
+dnf5 install -y discord
