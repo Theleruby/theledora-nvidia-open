@@ -25,11 +25,11 @@ dnf5 install -y java-21-openjdk-devel.x86_64 java-25-openjdk-devel.x86_64
 
 # chrome
 dnf5 config-manager setopt google-chrome.enabled=1
-dnf5 install -y google-chrome-stable
+#dnf5 install -y google-chrome-stable
 
 # docker
 dnf5 config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
-dnf5 install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+#dnf5 install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # .net
 dnf5 install -y dotnet-sdk-8.0 dotnet-runtime-8.0
