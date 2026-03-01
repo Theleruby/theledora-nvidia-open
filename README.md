@@ -1,6 +1,6 @@
 # theledora-nvidia-open
 
-Theledora is a customized Fedora Atomic Desktop bootc image based on [bazzite-nvidia-open:stable](https://github.com/ublue-os/bazzite/pkgs/container/bazzite-nvidia-open). It exists so that I can preinstall things from the Fedora package repositories which cannot be installed via flatpak, or which I found work better from the package repository. This avoids having to layer the packages using rpm-ostree, which is prone to breaking with package conflicts. Installing some of those packages also avoids me having to use containers for most of the stuff that I do (not everything, but that's OK).
+Theledora is a customized Fedora Atomic Desktop 43 bootc image based on [bazzite-nvidia-open:stable-43](https://github.com/ublue-os/bazzite/pkgs/container/bazzite-nvidia-open). It exists so that I can preinstall things from the Fedora package repositories which cannot be installed via flatpak, or which I found work better from the package repository. This avoids having to layer the packages using rpm-ostree, which is prone to breaking with package conflicts. Installing some of those packages also avoids me having to use containers for most of the stuff that I do (not everything, but that's OK).
 
 This image comes with the NVIDIA Open GPU kernel modules. It is suitable for systems which have NVIDIA GeForce 1600 series or later GPUs. I have no idea about AMD GPUs because I don't use them. I suspect it would probably still work fine.
 
