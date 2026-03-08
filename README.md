@@ -4,6 +4,12 @@ Theledora is a customized Fedora Atomic Desktop 43 bootc image based on [bazzite
 
 This image comes with the NVIDIA Open GPU kernel modules. It is suitable for systems which have NVIDIA GeForce 1600 series or later GPUs. I have no idea about AMD GPUs because I don't use them. I suspect it would probably still work fine.
 
+## Legal notice and disclaimer
+
+This is an experimental image which was created for my sole personal use only. I don't intend for anyone to use this except me, and I don't provide any support.
+
+I don't consider Theledora to be its own operating system or distro - apart from the extra preinstalled packages, this bootc image is literally just of Bazzite. The customization of this image is similar to using NTLite to modify a Windows install.wim file, and was done solely to make my Atomic Desktop journey easier, being made necessary because of the particular way in which the Fedora Atomic Desktop works. All queries and legal notices which are not directly related to the customizations made to this image should therefore be directed towards Universal Blue, the Fedora Project and/or Red Hat (whichever is appropriate).
+
 ## Using the image
 
 Install Bazzite Desktop NVIDIA Edition from https://download.bazzite.gg/bazzite-nvidia-open-stable-live-amd64.iso
@@ -17,10 +23,6 @@ Bazzite Documentation: https://docs.bazzite.gg/
 Fedora Atomic Desktops User Guide: https://docs.fedoraproject.org/en-US/atomic-desktops/
 
 I also made a wiki to document various Linux stuff which might be useful: https://pengwings.theleruby.com/
-
-## Legal notice and disclaimer
-
-This is an experimental image which was created for my sole personal use only. I don't intend for anyone to use this except me.
 
 ## Making your own image
 
