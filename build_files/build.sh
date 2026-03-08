@@ -45,7 +45,7 @@ dnf5 install -y dotnet-sdk-10.0 dotnet-runtime-10.0
 dnf5 install -y nodejs nodejs-npm
 
 # mercurial
-dnf5 install -y mercurial tortoisehg python3-dulwich
+dnf5 install -y mercurial tortoisehg python3-dulwich kdiff3
 
 # mysql
 dnf5 install -y mariadb-devel mariadb-connector-c-doc
@@ -74,8 +74,14 @@ dnf5 install -y discord
 # audacity
 dnf5 install -y audacity-freeworld
 
+# avidemux
+dnf5 install -y avidemux
+
 # krusader
 dnf5 install -y krusader
+
+# some misc kde productivity apps that are useful
+dnf5 install -y kolourpaint krita kdenlive
 
 # fonts
 dnf5 install -y cabextract fontconfig
