@@ -57,7 +57,7 @@ dnf5 install -y ImageMagick-devel
 dnf5 install -y fluidsynth fluid-soundfont-common fluid-soundfont-gm
 
 # vlc
-dnf5 install -y vlc vlc-plugin-ffmpeg vlc-plugin-fluidsynth vlc-plugin-kde vlc-plugin-visualization vlc-plugin-notify
+dnf5 install -y vlc vlc-plugin-ffmpeg vlc-plugin-fluidsynth vlc-plugin-kde vlc-plugin-visualization vlc-plugin-notify vlc-plugin-pipewire vlc-plugins-freeworld
 
 # yt-dlp
 dnf5 install -y yt-dlp
