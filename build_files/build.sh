@@ -83,6 +83,11 @@ dnf5 install -y krusader
 # some misc kde productivity apps that are useful
 dnf5 install -y kolourpaint krita kdenlive
 
+# disk utils similar to crystaldisk
+dnf5 install -y kdiskmark
+dnf5 copr -y enable birkch/QDiskInfo
+dnf5 install -y QDiskInfo
+
 # fonts
 dnf5 install -y cabextract fontconfig
 dnf5 install -y gnu-free-fonts-common gnu-free-sans-fonts lpf-cleartype-fonts lpf-mscore-fonts lpf-mscore-tahoma-fonts
