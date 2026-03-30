@@ -23,6 +23,9 @@ dnf5 install -y kdsingleapplication-qt6
 # easyeffects
 dnf5 install -y easyeffects calf lv2 lv2-calf-plugins lv2-mdala-plugins lv2-zam-plugins lsp-plugins-lv2
 
+# alsa plugin for dolby digital
+dnf5 install -y alsa-plugins-a52
+
 # python
 dnf5 install -y python3-devel
 
